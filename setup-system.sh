@@ -8,6 +8,7 @@
 # -- .env files
 # -- AWS config keys
 # -- /etc/hosts
+# 5. Run "./.macos"
 
 # path
 export PATH="/usr/local/bin:$PATH"
@@ -22,15 +23,17 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="edbwestlund@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
+git config --global commit.gpgsign false
+
 
 # install brew packages
-brew tap homebrew/science
 brew install r
 brew install zsh
 brew install awscli
 brew install pipenv
 brew install redis
 brew install composer
+brew install node
 
 # install brew casks
 brew cask install google-chrome
