@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Steps:
+#
 # 1. Run "source bootstrap.sh"
 # 2. Run "source brew.sh" to install all the brew defaults
 # 3. Run this file: "source setup-system.sh"
@@ -9,6 +10,12 @@
 # -- AWS config keys
 # -- /etc/hosts
 # 5. Run "./.macos"
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # fix icons
 sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
