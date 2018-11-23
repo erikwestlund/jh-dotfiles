@@ -10,6 +10,9 @@
 # -- /etc/hosts
 # 5. Run "./.macos"
 
+# fix icons
+sudo find /private/var/folders/ -name com.apple.dock.iconcache -exec rm {} \;
+
 # path
 export PATH="/usr/local/bin:$PATH"
 
