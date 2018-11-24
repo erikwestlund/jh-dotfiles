@@ -13,9 +13,9 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	# source ~/.zshrc;
-	ln -s $(pwd)/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-	ln -s $(pwd)/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-	ln -s $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets	
+	ln -fs $(pwd)/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+	ln -fs $(pwd)/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+	ln -fs $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets	
 	.$(pwd)/init/ssh-permissions.sh
 }
 
