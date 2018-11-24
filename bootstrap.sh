@@ -16,7 +16,7 @@ function doIt() {
 	ln -fs $(pwd)/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	ln -fs $(pwd)/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	ln -fs $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets	
-	.$(pwd)/init/ssh-permissions.sh
+	$(pwd)/init/ssh-permissions.sh
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
