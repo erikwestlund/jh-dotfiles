@@ -1,0 +1,16 @@
+{
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,    
+    "editor.lineHeight": 30,
+    "workbench.colorTheme": "Default Light+",
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "extensions.ignoreRecommendations": true,
+    "latex-workshop.chktex.enabled": false,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.message.update.show": false
+}
