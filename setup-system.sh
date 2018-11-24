@@ -10,6 +10,7 @@
 # -- AWS config keys
 # -- /etc/hosts
 # 5. Run "./.macos"
+# 6. Resync to get .zshrc to reinstall
 
 # Ask for the administrator password upfront
 sudo -v
@@ -69,6 +70,7 @@ brew cask install freedom
 brew cask install geekbench
 brew cask install github
 brew cask install logitech-options
+brew cask install rstudio
 
 # install brew fonts
 brew tap caskroom/fonts
