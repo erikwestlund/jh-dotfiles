@@ -23,4 +23,4 @@ brew cask install alfred
 brew cask install dash
 brew cask install freedom
 brew cask install geekbench
-
+brew cask install caffeine
