@@ -1,8 +1,37 @@
-chmod 700 ~/.ssh
-chmod 644 ~/.ssh/authorized_keys
-chmod 644 ~/.ssh/known_hosts
-chmod 644 ~/.ssh/config
-chmod 600 ~/.ssh/id_rsa
-chmod 600 ~/.ssh/github_rsa
-chmod 644 ~/.ssh/*.pub
-chmod 644 ~/.ssh/*.pem
+mkdir -p ~/.ssh
+chmod -f 700 ~/.ssh || :
+
+FILE=~/.ssh/authorized_keys 
+if [ -f $FILE ]; then
+   chmod -f 644 $FILE || exit 0
+fi
+
+FILE=~/.ssh/known_hosts 
+if [ -f $FILE ]; then
+   chmod -f 644 $FILE || exit 0
+fi
+
+FILE=~/.ssh/config 
+if [ -f $FILE ]; then
+   chmod -f 644 $FILE || exit 0
+fi
+
+FILE=~/.ssh/id_rsa 
+if [ -f $FILE ]; then
+   chmod -f 600 $FILE || exit 0
+fi
+
+FILE=~/.ssh/github_rsa 
+if [ -f $FILE ]; then
+   chmod -f 600 $FILE || exit 0
+fi
+
+FILE=~/.ssh/*.pub 
+if [ -f $FILE ]; then
+   chmod -f 644 $FILE || exit 0
+fi
+
+FILE=~/.ssh/*.pem 
+if [ -f $FILE ]; then
+   chmod -f 644 $FILE || exit 0
+fi
