@@ -110,15 +110,8 @@ touch ~/.ssh/known_hosts
 touch ~/.ssh/config
 source $(pwd)/init/ssh-permissions.sh
 
-# git
-# Git Setup
-GIT_AUTHOR_NAME="Erik Westlund"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="edbwestlund@gmail.com"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
-git config --global commit.gpgsign false
+# set permissions for set up scripts
+chmod +x $(pwd)/System/*.sh
 
 # Remove outdated versions from the cellar.
 brew cleanup

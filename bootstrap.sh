@@ -12,11 +12,12 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	# source ~/.zshrc;
+	
 	ln -fs $(pwd)/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	ln -fs $(pwd)/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	ln -fs $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 	source $(pwd)/init/ssh-permissions.sh
+	chmod +x ~/System/*.sh
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
