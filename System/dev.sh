@@ -11,6 +11,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # install brew packages
 brew install r
+brew install git
 brew install awscli
 brew install pipenv
 brew install redis

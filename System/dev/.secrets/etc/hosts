@@ -1,0 +1,50 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+
+0.0.0.0 cache database redis queue beanstalkd forum_dbserver mysql geoip blog.test letsrun.test
+
+173.255.233.61 web-linode
+173.255.226.59 web-services
+
+54.87.218.55 letsrun-dbserver shoes forum
+
+52.201.38.237 letsrun-monitoring
+52.5.53.98 letsrun-backup
+67.205.160.201 letsrun-offsite-backup
+
+52.6.227.255 letsrun-dev
+52.207.3.241 letsrun-shiny
+
+107.22.146.132 letsrun-app-1
+54.82.160.21 letsrun-app-2
+52.200.241.139 letsrun-app-worker
+52.2.143.89 letsrun-app-queue
+52.201.38.237 letsrun-redis-wordpress
+18.207.19.157 letsrun-redis-app
+
+54.90.171.115 letsrun-wp-dev
+
+52.207.52.115 letsrun-wp-master
+52.205.18.206 letsrun-forum-master
+52.23.113.189 letsrun-static-master
+
+52.90.80.153 letsrun-wp-slave-1
+107.23.95.166 letsrun-wp-slave-2
+
+54.89.110.8 letsrun-forum-slave-1
+34.224.16.196 letsrun-forum-slave-2
+107.23.222.152 letsrun-forum-slave-3
+
+54.196.194.252 letsrun-static-slave-1
+54.90.160.121 letsrun-static-slave-2
+
+52.2.143.89 letsrun-new-app
+52.207.36.212 letsrun-worker
