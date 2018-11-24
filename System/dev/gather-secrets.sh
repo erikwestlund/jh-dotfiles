@@ -35,10 +35,11 @@ TEMPCODEDIR=$TEMPDIR/code
 mkdir -p $TEMPCODEDIR
 
 # letsrun
+
 LETSRUNDIR=$CODEDIR/letsrun
 TEMPLETSRUNDIR=$TEMPCODEDIR/letsrun
 
-if [ -f $LETSRUNDIR ]; then
+if [ -d $LETSRUNDIR ]; then
     mkdir -p $TEMPLETSRUNDIR
     cp $LETSRUNDIR/.env $TEMPLETSRUNDIR
     cp $LETSRUNDIR/.env-dev-server $TEMPLETSRUNDIR
@@ -53,7 +54,7 @@ fi
 BLOGDIR=$CODEDIR/blog
 TEMPBLOGDIR=$TEMPCODEDIR/blog
 
-if [ -f $BLOGDIR ]; then
+if [ -d $BLOGDIR ]; then
     mkdir -p $TEMPBLOGDIR
     mkdir -p $TEMPBLOGDIR/app    
     cp $BLOGDIR/.docker_env $TEMPBLOGDIR
@@ -61,4 +62,5 @@ if [ -f $BLOGDIR ]; then
     cp $BLOGDIR/app/.npmrc $TEMPBLOGDIR/app
 fi
 
-zip -r $TEMPZIP $TEMPDIR
+cd $TEMPDIR
+zip -r $TEMPZIP ./*
