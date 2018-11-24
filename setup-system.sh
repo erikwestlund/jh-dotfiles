@@ -39,7 +39,6 @@ git config --global commit.gpgsign false
 
 # install brew packages
 brew install r
-brew install zsh
 brew install awscli
 brew install pipenv
 brew install redis
