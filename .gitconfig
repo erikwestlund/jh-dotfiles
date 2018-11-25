@@ -186,5 +186,5 @@
 
 	insteadOf = "gist:"
 [credential]
-	helper = !aws codecommit credential-helper $@
+	helper = "!security delete-internet-password -l \"git-codecommit.us-east-1.amazonaws.com\"; aws codecommit credential-helper $@"
 	UseHttpPath = true
