@@ -44,13 +44,15 @@ TEMPLETSRUNDIR=$TEMPCODEDIR/letsrun
 
 if [ -d $LETSRUNDIR ]; then
     mkdir -p $TEMPLETSRUNDIR
+    mkdir -p $TEMPLETSRUNDIR/database/seeds/data/
     cp $LETSRUNDIR/.env $TEMPLETSRUNDIR
     cp $LETSRUNDIR/.env-dev-server $TEMPLETSRUNDIR
     cp $LETSRUNDIR/.env-production-server $TEMPLETSRUNDIR
     cp $LETSRUNDIR/.env-worker-server $TEMPLETSRUNDIR
     cp $LETSRUNDIR/.env.dusk.local $TEMPLETSRUNDIR    
     cp $LETSRUNDIR/.npmrc $TEMPLETSRUNDIR
-    cp $LETSRUNDIR/auth.json $TEMPLETSRUNDIR    
+    cp $LETSRUNDIR/auth.json $TEMPLETSRUNDIR
+    cp $LETSRUNDIR/database/seeds/data/letsrun_com_schema.sql $TEMPLETSRUNDIR/database/seeds/data/
 fi
 
 # blog
