@@ -13,7 +13,6 @@ export PATH="/usr/local/bin:$PATH"
 brew cask install 1password
 brew cask install google-chrome
 brew cask install superduper
-brew cask install dropbox
 brew cask install spotify
 brew cask install microsoft-office
 brew cask install clover-configurator
