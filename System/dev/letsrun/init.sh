@@ -7,7 +7,7 @@ git fetch
 git reset --hard
 git checkout dev
 
-docker-compose up -d
+./develop up -d
 composer install
 npm install
-docker-compose down
+docker-compose down 
