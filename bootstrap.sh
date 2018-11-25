@@ -18,7 +18,7 @@ function doIt() {
 	ln -fs $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 	source $(pwd)/init/ssh-permissions.sh
 	chmod +x ~/System/*.sh
-chmod +x ~/System/dev/*.sh	
+	chmod +x ~/System/dev/*.sh	
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

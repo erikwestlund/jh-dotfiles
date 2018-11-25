@@ -26,7 +26,7 @@ rsync -avh ~/.ssh/ $TEMPDIR/ssh/
 
 # aws
 mkdir -p $TEMPDIR/aws/
-rsync -avh ~/.aws/ $TEMPDIR/aws/
+rsync --exclude "known_hosts" -avh ~/.aws/ $TEMPDIR/aws/
 
 ## code secrets
 CODEDIR=$HOME/code
@@ -35,7 +35,6 @@ TEMPCODEDIR=$TEMPDIR/code
 mkdir -p $TEMPCODEDIR
 
 # letsrun
-
 LETSRUNDIR=$CODEDIR/letsrun
 TEMPLETSRUNDIR=$TEMPCODEDIR/letsrun
 
