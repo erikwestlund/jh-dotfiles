@@ -16,9 +16,8 @@ function doIt() {
 	ln -fs $(pwd)/init/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 	ln -fs $(pwd)/init/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 	ln -fs $(pwd)/init/vscode/snippets/ $HOME/Library/Application\ Support/Code/User/snippets
-	source $(pwd)/init/ssh-permissions.sh
-	chmod +x $HOME/System/*.sh
-	chmod +x $HOME/System/dev/*.sh	
+	source $(pwd)/System/dev/ssh-permissions.sh
+	find $HOME/system/ -type f -iname "*.sh" -exec chmod +x {} \;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

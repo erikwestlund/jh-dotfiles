@@ -9,13 +9,29 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 DIR=$HOME/Desktop
 SECRETSDIR=$DIR/secrets
-cd $DIR
-unzip $DIR/secrets.zip
 
+rm -rf $SECRETSDIR
+mkdir -p $SECRETSDIR
 
+unzip $DIR/secrets.zip -d $SECRETSDIR
+
+# etc hosts
 sudo rm -f /etc/hosts.bak 
 sudo cp /etc/hosts /etc/hosts.bak
 sudo rm -f /etc/hosts
 sudo cp $SECRETSDIR/etc/hosts /etc/hosts
 
-#rm -rf ~/.secrets/
+# ssh
+rsync -avh --exclude=.DS_store $SECRETSDIR/ssh/ $HOME/.ssh/
+source ssh-permissions.sh
+
+# aws
+rsync -avh --exclude=.DS_store $SECRETSDIR/aws/ $HOME/.aws/
+
+# sequel pro
+rsync -avh --exclude=.DS_store $SECRETSDIR/sequel-pro/ $HOME/Library/Application\ Support/Sequel\ Pro/Data/
+
+# code
+rsync -avh --exclude=.DS_store $SECRETSDIR/code/ $HOME/code/
+
+rm -rf $SECRETSDIR

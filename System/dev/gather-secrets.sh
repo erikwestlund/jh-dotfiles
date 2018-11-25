@@ -26,11 +26,11 @@ rsync -avh ~/.ssh/ $TEMPDIR/ssh/
 
 # aws
 mkdir -p $TEMPDIR/aws/
-rsync --exclude "known_hosts"  --exclude "known_hosts" -avh ~/.aws/ $TEMPDIR/aws/
+rsync --exclude "known_hosts" --exclude "known_hosts" --exclude ".DS_Store" -avh ~/.aws/ $TEMPDIR/aws/
 
 # sequel pro
 mkdir -p $TEMPDIR/sequel-pro
-cp ~/Library/Application\ Support/Sequel\ Pro/Data/Favorites.plist $TEMPDIR/sequel-pro/
+cp $HOME/Library/Application\ Support/Sequel\ Pro/Data/Favorites.plist $TEMPDIR/sequel-pro/
 
 ## code secrets
 CODEDIR=$HOME/code
