@@ -13,12 +13,12 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	
-	ln -fs $(pwd)/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-	ln -fs $(pwd)/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-	ln -fs $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
+	ln -fs $(pwd)/init/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+	ln -fs $(pwd)/init/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+	ln -fs $(pwd)/init/vscode/snippets/ $HOME/Library/Application\ Support/Code/User/snippets
 	source $(pwd)/init/ssh-permissions.sh
-	chmod +x ~/System/*.sh
-	chmod +x ~/System/dev/*.sh	
+	chmod +x $HOME/System/*.sh
+	chmod +x $HOME/System/dev/*.sh	
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

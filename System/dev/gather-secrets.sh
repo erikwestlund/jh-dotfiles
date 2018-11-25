@@ -30,7 +30,7 @@ rsync --exclude "known_hosts"  --exclude "known_hosts" -avh ~/.aws/ $TEMPDIR/aws
 
 # sequel pro
 mkdir -p $TEMPDIR/sequel-pro
-cp ~/Library/Application Support/Sequel Pro/Data/Favorites.plist $TEMPDIR/sequel-pro/
+cp ~/Library/Application\ Support/Sequel\ Pro/Data/Favorites.plist $TEMPDIR/sequel-pro/
 
 ## code secrets
 CODEDIR=$HOME/code
@@ -67,3 +67,5 @@ fi
 
 cd $TEMPDIR
 zip -r $TEMPZIP ./*
+
+rm -rf $TEMPDIR
