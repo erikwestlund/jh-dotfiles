@@ -62,13 +62,17 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# Git user configuration
 GIT_AUTHOR_NAME="Erik Westlund"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="edbwestlund@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# Paths
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -97,13 +101,13 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias lrm="ssh letsrun-main"
 alias lrdb="ssh letsrun-dbserver"
 alias lrdev="ssh letsrun-dev"
 
 alias art="php artisan"
 alias tinker="php artisan tinker"
 
+# git
 alias a="git add"
 alias ap="git add -p"
 alias c="git commit --verbose"
@@ -129,6 +133,7 @@ alias b="git branch"
 alias co="git checkout"
 alias cob="git checkout -b"
 
+# coding helpers
 alias flredis="redis-cli flushall"
 alias log50="tail -n 50 storage/logs/laravel.log"
 alias aqw="php artisan queue:work"
@@ -136,11 +141,16 @@ alias aql="php artisan queue:listen --tries=3 --timeout=180"
 alias phpunit="vendor/bin/phpunit"
 alias phpuf="phpunit --filter "
 alias duskf="php artisan dusk --filter"
+alias code="cd ~/code"
 alias clet="cd ~/code/letsrun/"
+alias letsrun="cd ~/code/letsrun/"
+alias dotfiles="cd ~/code/dotfiles"
+alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
 alias inrep="sudo ~/bin/InsanelyRepairPermission -rt /"
 alias d="./develop"
 alias dev="./develop"
 
+# blog docker stuff
 alias cblog="cd /Users/erik/code/blog"
 alias blogstop="cd /Users/erik/code/blog && docker stop blogcontainer"
 alias blogrm="cd /Users/erik/code/blog &&  docker rm blogcontainer"
@@ -149,7 +159,6 @@ alias blogimage="cd /Users/erik/code/blog && docker build -t blog ."
 alias blogstart="cd /Users/erik/code/blog && docker run -d --name blogcontainer -p 80:80 -v $(pwd)/app:/app -e FLASK_APP=run.py -e FLASK_DEBUG=1 blog flask run --host=0.0.0.0 --port=80"
 alias blogrebuild="cd /Users/erik/code/blog && docker stop blogcontainer && docker rm blogcontainer && docker build -t blog . && docker run -d --name blogcontainer -p 80:80 -v $(pwd)/app:/app -e FLASK_APP=run.py -e FLASK_DEBUG=1 blog flask run --host=0.0.0.0 --port=80"
 
-export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 
 
