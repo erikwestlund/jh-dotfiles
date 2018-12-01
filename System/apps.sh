@@ -23,4 +23,5 @@ brew cask install dash
 brew cask install freedom
 brew cask install geekbench
 brew cask install caffeine
+brew cask install mysqlworkbench
 # brew cask install dropbox # turned off for now; use site installer; had issues with brew
