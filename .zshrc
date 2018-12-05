@@ -139,7 +139,7 @@ alias clet="cd ~/code/letsrun/"
 alias letsrun="cd ~/code/letsrun/"
 alias dotfiles="cd ~/code/dotfiles"
 alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
-alias inrep="sudo ~/bin/InsanelyRepairPermission -rt /"
+alias inrep="sudo ~/System/bin/InsanelyRepairPermission -rt /"
 alias d="./develop"
 alias dev="./develop"
 

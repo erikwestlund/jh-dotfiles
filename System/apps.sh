@@ -9,11 +9,15 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # path
 export PATH="/usr/local/bin:$PATH"
 
+# drivers -- includes sonos
+brew tap homebrew/cask-drivers
+
 # install brew casks
 brew cask install 1password
 brew cask install google-chrome
 brew cask install superduper
 brew cask install spotify
+brew cask install sonos
 brew cask install microsoft-office
 brew cask install clover-configurator
 brew cask install parallels-access

@@ -13,10 +13,7 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	
-	ln -fs $(pwd)/init/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-	ln -fs $(pwd)/init/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-	ln -fs $(pwd)/init/vscode/snippets/ $HOME/Library/Application\ Support/Code/User/snippets
-	source $(pwd)/System/dev/ssh-permissions.sh
+	source $HOME/System/dev/ssh-permissions.sh
 	find $HOME/System -type f -iname "*.sh" -exec chmod +x {} \;
 }
 

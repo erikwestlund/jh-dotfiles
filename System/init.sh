@@ -93,9 +93,9 @@ brew install zopfli
 
 # vscode
 brew cask install visual-studio-code
-ln -fs $(pwd)/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -fs $(pwd)/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -fs $(pwd)/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
+ln -fs $HOME/System/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -fs $HOME/System/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -fs $HOME/System/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 
 # zsh
 brew install zsh
@@ -103,15 +103,18 @@ chsh -s $(which zsh)
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+
+# set permissions for set up scripts and binaries
+chmod +x $HOME/System/*.sh
+chmod +x $HOME/System/bin/InsanelyRepairPermission
+
 # ssh
 mkdir -p ~/.ssh
 touch ~/.ssh/authorized_keys
 touch ~/.ssh/known_hosts
 touch ~/.ssh/config
-source $(pwd)/init/ssh-permissions.sh
+source $HOME/System/dev/ssh-permissions.sh
 
-# set permissions for set up scripts
-chmod +x $(pwd)/System/*.sh
 
 # Remove outdated versions from the cellar.
 brew cleanup
