@@ -4,7 +4,7 @@
 
 # get code
 rm -rf $HOME/code/letsrun-wp
-git clone https://github.com/erikwestlund/docker-wp.git letsrun-wp
+git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/docker-letsrun-wp letsrun-wp
 cd $HOME/code/letsrun-wp
 
 ./develop sync
