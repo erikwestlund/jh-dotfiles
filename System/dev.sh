@@ -20,6 +20,7 @@ brew install pipenv
 brew install redis
 brew install composer
 brew install node
+brew install jq
 
 # install brew casks
 brew cask install sublime-text
