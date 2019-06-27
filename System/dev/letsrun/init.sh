@@ -17,6 +17,7 @@ composer install
 npm install
 
 # set up db
+./develop exec app mysql --host="mysql" --user="root" --password="secret" -e "CREATE DATABASE db17058c";
 ./develop exec app mysql --host="mysql" --user="root" --password="secret" -e "CREATE DATABASE letsrun";
 ./develop exec app mysql --host="mysql" --user="root" --password="secret" -e "CREATE DATABASE letsrun_com";
 ./develop exec app mysql --host="mysql" --user="root" --password="secret" -e "CREATE DATABASE letsrun_testing";
