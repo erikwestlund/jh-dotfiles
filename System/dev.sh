@@ -21,6 +21,7 @@ brew install redis
 brew install composer
 brew install node
 brew install jq
+brew install php@7.3
 
 # install brew casks
 brew cask install sublime-text
