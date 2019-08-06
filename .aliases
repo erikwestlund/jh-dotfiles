@@ -153,3 +153,5 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias addawssec="bash /Users/erik/code/utils/add_ip_lrc_aws.sh"
 alias eslintres="./node_modules/eslint/bin/eslint.js --fix resources --ext .js,.vue"
+
+alias syncsidekick="rsync -az /Users/erik/code/letsrun-sidekick/public/js/ /Users/erik/code/letsrun-legacy/htdocs/inc/sidekick/js/"
