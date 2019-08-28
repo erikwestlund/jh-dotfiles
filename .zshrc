@@ -153,6 +153,4 @@ alias blogimage="cd /Users/erik/code/blog && docker build -t blog ."
 alias blogstart="cd /Users/erik/code/blog && docker run -d --name blogcontainer -p 80:80 -v $(pwd)/app:/app -e FLASK_APP=run.py -e FLASK_DEBUG=1 blog flask run --host=0.0.0.0 --port=80"
 alias blogrebuild="cd /Users/erik/code/blog && docker stop blogcontainer && docker rm blogcontainer && docker build -t blog . && docker run -d --name blogcontainer -p 80:80 -v $(pwd)/app:/app -e FLASK_APP=run.py -e FLASK_DEBUG=1 blog flask run --host=0.0.0.0 --port=80"
 
-
-
-
+eval "$(docker-machine env default)"
