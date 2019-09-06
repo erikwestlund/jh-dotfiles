@@ -21,7 +21,6 @@ brew install redis
 brew install composer
 brew install node
 brew install jq
-brew install php@7.3
 
 # install brew casks
 brew cask install sublime-text
@@ -34,6 +33,7 @@ brew cask install coda
 brew cask install dash
 brew cask install github
 brew cask install rstudio
+brew cask install tableplus
 
 # install brew fonts
 brew tap caskroom/fonts

@@ -39,7 +39,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+brew install php@7.3
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -117,6 +117,9 @@ touch ~/.ssh/known_hosts
 touch ~/.ssh/config
 source $HOME/System/dev/ssh-permissions.sh
 
+
+# benchmarking
+brew cask install geekbench
 
 # Remove outdated versions from the cellar.
 brew cleanup
