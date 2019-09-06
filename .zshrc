@@ -94,4 +94,7 @@ export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source $HOME/.aliases
+
 eval "$(docker-machine env default)"
+
