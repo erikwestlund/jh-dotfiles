@@ -41,3 +41,6 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 brew cask install font-source-code-pro
 brew cask install font-lato
+
+# link settings
+ln -fs $HOME/System/init/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
