@@ -28,9 +28,6 @@ source ssh-permissions.sh
 # aws
 rsync -avh --exclude=.DS_store $SECRETSDIR/aws/ $HOME/.aws/
 
-# sequel pro
-rsync -avh --exclude=.DS_store $SECRETSDIR/sequel-pro/ $HOME/Library/Application\ Support/Sequel\ Pro/Data/
-
 # code
 rsync -avh --exclude=.DS_store $SECRETSDIR/code/ $HOME/code/
 

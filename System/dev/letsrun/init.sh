@@ -3,6 +3,7 @@
 # make sure secrets are already gathered.
 
 # get code
+mkdir -p $HOME/code/letsrun
 cd $HOME/code/letsrun
 git init
 git remote add origin https://git-codecommit.us-east-1.amazonaws.com/v1/repos/LetsRun.com

@@ -28,3 +28,4 @@ brew cask install freedom
 brew cask install geekbench
 brew cask install caffeine
 brew cask install mysqlworkbench
+brew cask install slack

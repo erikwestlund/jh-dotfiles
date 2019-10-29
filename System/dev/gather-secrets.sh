@@ -67,6 +67,17 @@ if [ -d $BLOGDIR ]; then
     cp $BLOGDIR/app/.npmrc $TEMPBLOGDIR/app
 fi
 
+
+# zuhanden
+ZUHANDENDIR=$CODEDIR/zuhanden
+TEMPZUHANDENDIR=$TEMPCODEDIR/zuhanden
+
+if [ -d $ZUHANDENDIR ]; then
+    mkdir -p $TEMPZUHANDENDIR
+    cp $ZUHANDENDIR/.env $TEMPZUHANDENDIR
+    cp $ZUHANDENDIR/.npmrc $TEMPZUHANDENDIR
+fi
+
 cd $TEMPDIR
 zip -r $TEMPZIP ./*
 

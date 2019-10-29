@@ -24,10 +24,8 @@ brew install jq
 
 # install brew casks
 brew cask install sublime-text
-brew cask install docker
 brew cask install jetbrains-toolbox
 brew cask install iterm2
-brew cask install sequel-pro
 brew cask install mactex
 brew cask install coda
 brew cask install dash
