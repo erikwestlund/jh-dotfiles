@@ -42,3 +42,7 @@ brew cask install font-lato
 
 # link settings
 ln -fs $HOME/System/init/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+# install python packages
+pip3 install masonite-foreman --user
+
