@@ -65,7 +65,7 @@ source $ZSH/oh-my-zsh.sh
 # Paths
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
-
+export PATH=$PATH:/Users/erik/Library/Python/3.7/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
