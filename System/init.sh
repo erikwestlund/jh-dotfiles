@@ -14,32 +14,28 @@ BREW_PREFIX=$(brew --prefix)
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install Bash 4.
+brew install gnu-sed
+# Install Zsh
 brew install zsh
 
-# Switch to using brew-installed zshrc as default shell
-chsh -s /bin/zsh
-
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget` 
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew install php@7.3
+brew install php@7.4
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -47,38 +43,17 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+# install brew fonts
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+brew cask install font-source-code-pro
+brew cask install font-lato
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -93,14 +68,12 @@ brew install zopfli
 
 # vscode
 brew cask install visual-studio-code
+mkdir -p ~/Library/Application\ Support/Code/User/
 ln -fs $HOME/System/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -fs $HOME/System/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -fs $HOME/System/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 
-# zsh
-brew install zsh
-chsh -s $(which zsh)
-
+# oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #htop
@@ -117,9 +90,11 @@ touch ~/.ssh/known_hosts
 touch ~/.ssh/config
 source $HOME/System/dev/ssh-permissions.sh
 
+# install iterm2
+brew cask install iterm2
 
-# benchmarking
-brew cask install geekbench
+# install sublime text
+brew cask install sublime-text
 
 # Remove outdated versions from the cellar.
 brew cleanup

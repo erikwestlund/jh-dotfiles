@@ -98,3 +98,5 @@ source $HOME/.aliases
 
 eval "$(docker-machine env default)"
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

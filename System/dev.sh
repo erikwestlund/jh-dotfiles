@@ -14,35 +14,27 @@ export PATH="/usr/local/bin:$PATH"
 
 # install brew packages
 brew install r
-brew install git
 brew install awscli
 brew install pipenv
 brew install redis
 brew install composer
-brew install node
 brew install jq
 
+# install node & npm
+brew install nvm
+mkdir ~/.nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+nvm install --lts
+nvm use default
+nvm install --latest-npm
+
 # install brew casks
-brew cask install sublime-text
 brew cask install jetbrains-toolbox
-brew cask install iterm2
-brew cask install mactex
 brew cask install coda
 brew cask install dash
 brew cask install github
 brew cask install rstudio
 brew cask install tableplus
-
-# install brew fonts
-brew tap caskroom/fonts
-
-brew cask install font-fira-code
-brew cask install font-source-code-pro
-brew cask install font-lato
-
-# link settings
-ln -fs $HOME/System/init/sublime-text/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-
-# install python packages
-pip3 install masonite-foreman --user
+brew cask install mactex
 

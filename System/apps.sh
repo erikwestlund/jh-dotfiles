@@ -19,11 +19,8 @@ brew cask install superduper
 brew cask install spotify
 brew cask install sonos
 brew cask install microsoft-office
-brew cask install clover-configurator
-brew cask install parallels-access
 brew cask install zotero
 brew cask install alfred
-brew cask install dash
 brew cask install freedom
 brew cask install geekbench
 brew cask install caffeine
