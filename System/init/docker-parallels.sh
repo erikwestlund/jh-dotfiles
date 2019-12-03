@@ -66,7 +66,7 @@ aws s3 cp s3://letsrun-backup/database/daily/sql/db17058c.sql.gz ~/Downloads/db1
 mysqldump --column-statistics=0 --no-data -h letsrun-dbserver -u letsrun-app -p letsrun_com > ~/Downloads/letsrun_com_testing.sql
 cp ~/Downloads/letsrun_com_testing.sql  ~/Downloads/letsrun_com_browser_testing.sql
 
-# load test Dbs
+# load test Dbs for forum
 pv ~/Downloads/letsrun_com_testing.sql | mysql -h mysql -u root -psecret letsrun_com_testing
 pv ~/Downloads/letsrun_com_browser_testing.sql | mysql -h mysql -u root -psecret letsrun_com_browser_testing
 
