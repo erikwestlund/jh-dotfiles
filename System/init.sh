@@ -24,7 +24,7 @@ brew install gnu-sed
 # Install Zsh
 brew install zsh
 
-# Install `wget` 
+# Install `wget`
 brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
@@ -73,9 +73,6 @@ ln -fs $HOME/System/init/vscode/settings.json ~/Library/Application\ Support/Cod
 ln -fs $HOME/System/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -fs $HOME/System/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 
-# oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 #htop
 brew install htop
 
@@ -98,3 +95,7 @@ brew cask install sublime-text
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
