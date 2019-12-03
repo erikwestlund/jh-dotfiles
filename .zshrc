@@ -96,7 +96,7 @@ export PATH=$PATH:/Users/erik/Library/Python/3.7/bin
 
 source $HOME/.aliases
 
-eval "$(docker-machine env default)"
+eval "$(docker-machine env Docker)"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
