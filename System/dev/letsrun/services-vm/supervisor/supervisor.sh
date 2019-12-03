@@ -6,8 +6,7 @@ usermod -a -G supervisor dev
 
 mv /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf-init
 
-# Copy files, then run
-
+# Copy supervisord.conf, then run
 
 touch /var/run/supervisor.sock
 chmod 777 /var/run/supervisor.sock

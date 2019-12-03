@@ -6,24 +6,10 @@ cd /opt/beanstalk-aurora
 wget https://github.com/xuri/aurora/releases/download/2.2/aurora_linux_amd64_v2.2.tar.gz
 tar -xvzf /opt/beanstalk-aurora/aurora_linux_amd64_v2.2.tar.gz
 
-# supervisor
-apt -y install supervisor
-
-groupadd supervisor
-usermod -a -G supervisor ubuntu
-
-mv /etc/supervisor/supervisord.conf /etc/supervisor/supervisord.conf-init
-
-# Copy supervisord.conf to /etc/supervisor/supervisord.conf
-
-touch /var/run/supervisor.sock
-chmod 777 /var/run/supervisor.sock
-
-service supervisor restart
-
 # app
 touch /var/log/aurora-beanstalk.log
-cp /opt/letsrun-provision/letsrun/config/supervisor/beanstalk-aurora.conf /etc/supervisor/conf.d/beanstalk-aurora.conf
+# copy beanstalk-aurora.conf using:
+nano /etc/supervisor/conf.d/beanstalk-aurora.conf
 
 supervisorctl reread
 supervisorctl update

@@ -9,8 +9,6 @@ server {
 
     server_name beanstalk.letsrun.test;
 
-    auth_basic "Restricted";    auth_basic_user_file /etc/nginx/restricted_users;
-
     access_log /var/log/nginx/beanstalk.letsrun.test.access.log;
     error_log /var/log/nginx/beanstalk.letsrun.test.error.log;
 
