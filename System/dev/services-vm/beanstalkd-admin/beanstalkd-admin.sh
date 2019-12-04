@@ -16,11 +16,6 @@ supervisorctl update
 supervisorctl start beanstalk-aurora:*
 
 # nginx
-add-apt-repository -y ppa:nginx/development
-
-apt install -y nginx
-
-echo 'letsrun:$apr1$n/51L6Pe$JTt0O4DATIBRvNzE4nss3/' > /etc/nginx/restricted_users
 
 NGINX=$(cat <<-END
 
@@ -28,13 +23,10 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name beanstalk.letsrun.com;
+    server_name beanstalk.letsrun.test;
 
-    auth_basic "Restricted";
-    auth_basic_user_file /etc/nginx/restricted_users;
-
-    access_log /var/log/nginx/beanstalk.letsrun.com.access.log;
-    error_log /var/log/nginx/beanstalk.letsrun.com.error.log;
+    access_log /var/log/nginx/beanstalk.letsrun.test.access.log;
+    error_log /var/log/nginx/beanstalk.letsrun.test.error.log;
 
     location / {
         proxy_set_header   X-Forwarded-For \$remote_addr;
@@ -45,10 +37,11 @@ server {
 END
 )
 
-echo "$NGINX" > /etc/nginx/sites-available/beanstalk.letsrun.com
+echo "$NGINX" > /etc/nginx/sites-available/beanstalk.letsrun.test
 
+rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-ln -s /etc/nginx/sites-available/beanstalk.letsrun.com /etc/nginx/sites-enabled/beanstalk.letsrun.com
+ln -s /etc/nginx/sites-available/beanstalk.letsrun.test /etc/nginx/sites-enabled/beanstalk.letsrun.test
 
 
 service nginx restart
