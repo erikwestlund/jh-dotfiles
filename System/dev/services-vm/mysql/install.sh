@@ -12,10 +12,6 @@ service mysql restart
 apt -y install  percona-server-server-5.7 percona-server-client-5.7 percona-toolkit
 mysql -u root -psecret -e "create database letsrun;"
 mysql -u root -psecret -e "create database letsrun_com;"
-mysql -u root -psecret -e "create database letsrun_testing;"
-mysql -u root -psecret -e "create database letsrun_browser_testing;"
-mysql -u root -psecret -e "create database letsrun_com_testing;"
-mysql -u root -psecret -e "create database letsrun_com_browser_testing;"
 mysql -u root -psecret -e "create database wordpress;"
 mysql -u root -psecret -e "create database db17058c;"
 mysql -u root -psecret -e "create database dbdii;"
@@ -23,3 +19,7 @@ mysql -u root -psecret -e "create database dbdiii;"
 mysql -u root -psecret -e "create database shoes;"
 mysql -u root -psecret -e "CREATE USER 'root'@'%' IDENTIFIED BY 'secret'";
 mysql -u root -psecret -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';"
+
+# create test database which runs in docker
+mysql -h testdb -u root -psecret -e "create database letsrun;"
+mysql -h testdb -u root -psecret -e "create database letsrun_com;"

@@ -20,6 +20,16 @@ pv ~/Downloads/dbdiii.sql.gz | gunzip | mysql -h mysql -u root -psecret dbdiii
 pv ~/Downloads/db17058c.sql.gz | gunzip | mysql -h mysql -u root -psecret db17058c
 
 # Make sure aws security group is set up; pull down schema of letsrun_com for test DBs
+mysqldump --column-statistics=0 --no-data -h letsrun-dbserver -u letsrun-app -p letsrun > ~/Downloads/letsrun_testing.sql
+cp ~/Downloads/letsrun_testing.sql  ~/Downloads/letsrun_browser_testing.sql
+
+# load test Dbs for forum
+pv ~/Downloads/letsrun_testing.sql | mysql -h mysql -u root -psecret letsrun_testing
+pv ~/Downloads/letsrun_browser_testing.sql | mysql -h mysql -u root -psecret letsrun_browser_testing
+
+
+
+# Make sure aws security group is set up; pull down schema of letsrun_com for test DBs
 mysqldump --column-statistics=0 --no-data -h letsrun-dbserver -u letsrun-app -p letsrun_com > ~/Downloads/letsrun_com_testing.sql
 cp ~/Downloads/letsrun_com_testing.sql  ~/Downloads/letsrun_com_browser_testing.sql
 
