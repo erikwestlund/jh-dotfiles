@@ -49,7 +49,7 @@ log_error = /var/log/mysql/error.log
 log_bin                 = /var/log/mysql/mysql-bin.log
 expire_logs_days	= 14
 max_binlog_size         = 1000M
-relay_log_space_limit   = 20G
+relay_log_space_limit   = 1G
 
 
 #
