@@ -21,13 +21,8 @@ brew install composer
 brew install jq
 
 # install node & npm
-brew install nvm
-mkdir ~/.nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-nvm install --lts
-nvm use default
-nvm install --latest-npm
+brew install Schniz/tap/fnm
+
 
 # install brew casks
 brew cask install jetbrains-toolbox
