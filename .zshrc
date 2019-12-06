@@ -98,5 +98,4 @@ source $HOME/.aliases
 
 eval "$(docker-machine env Docker)"
 
-source  /usr/local/opt/nvm/nvm.sh# fnm
 eval "$(fnm env --multi)"
