@@ -8,7 +8,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # get iterm themes
 git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git dev/iterm-themes
-
+git clone https://github.com/jsit/night-owl-iterm2-theme
 # path
 export PATH="/usr/local/bin:$PATH"
 
