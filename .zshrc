@@ -98,5 +98,4 @@ source $HOME/.aliases
 
 eval "$(docker-machine env Docker)"
 
-export NVM_DIR=~/.nvm
-source  /usr/local/opt/nvm/nvm.sh
+eval "$(fnm env --multi)"
