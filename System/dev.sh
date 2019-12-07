@@ -22,7 +22,7 @@ brew install jq
 
 # install node & npm
 brew install Schniz/tap/fnm
-
+fnm install latest
 
 # install brew casks
 brew cask install jetbrains-toolbox
@@ -32,4 +32,3 @@ brew cask install github
 brew cask install rstudio
 brew cask install tableplus
 brew cask install mactex
-
