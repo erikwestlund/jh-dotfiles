@@ -22,8 +22,8 @@ brew install jq
 
 # install node & npm
 brew install Schniz/tap/fnm
-fnm install latest
-fnm use latest
+fnm install 12
+fnm use 12
 
 # install brew casks
 brew cask install jetbrains-toolbox
