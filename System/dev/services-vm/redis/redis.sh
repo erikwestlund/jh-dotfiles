@@ -17,3 +17,4 @@ sed -i -e 's/stop-writes-on-bgsave-error yes/stop-writes-on-bgsave-error no/g' /
 service redis-server restart
 
 
+sudo systemctl enable redis-server
