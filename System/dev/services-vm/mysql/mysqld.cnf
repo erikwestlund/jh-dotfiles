@@ -62,6 +62,7 @@ innodb_read_io_threads		 = 4
 innodb_buffer_pool_instances = 8
 innodb_buffer_pool_size = 8G
 innodb_file_per_table = 1
+innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:5G
 
 read_buffer_size = 1M
 sort_buffer_size = 1M
