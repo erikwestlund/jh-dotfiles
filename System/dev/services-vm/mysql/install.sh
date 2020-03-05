@@ -23,3 +23,4 @@ mysql -u root -psecret -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';"
 # create test database which runs in docker
 mysql -h testdb -u root -psecret -e "create database letsrun;"
 mysql -h testdb -u root -psecret -e "create database letsrun_com;"
+mysql -h testdb -u root -psecret -e "create database wordpress;"
