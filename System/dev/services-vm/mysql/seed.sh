@@ -20,3 +20,5 @@ pv ~/Downloads/dbdiii.sql.gz | gunzip | mysql -h mysql -u root -psecret dbdiii
 pv ~/Downloads/db17058c.sql.gz | gunzip | mysql -h mysql -u root -psecret db17058c
 
 # Seed test databases using artisan command
+pv ~/Downloads/letsrun.sql.gz | gunzip | mysql -h testdb -u root -psecret letsrun
+pv ~/Downloads/letsrun_com.sql.gz | gunzip | mysql -h testdb -u root -psecret letsrun_com

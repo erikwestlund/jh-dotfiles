@@ -24,6 +24,5 @@ brew cask install alfred
 brew cask install freedom
 brew cask install geekbench
 brew cask install caffeine
-brew cask install mysqlworkbench
 brew cask install slack
 brew cask install istat-menus

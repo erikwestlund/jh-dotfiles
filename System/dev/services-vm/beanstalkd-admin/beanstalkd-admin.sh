@@ -8,6 +8,7 @@ tar -xvzf /opt/beanstalk-aurora/aurora_linux_amd64_v2.2.tar.gz
 
 # app
 touch /var/log/aurora-beanstalk.log
+touch /etc/supervisor/conf.d/beanstalk-aurora.conf
 # copy beanstalk-aurora.conf using:
 nano /etc/supervisor/conf.d/beanstalk-aurora.conf
 
@@ -37,11 +38,11 @@ server {
 END
 )
 
-echo "$NGINX" > /etc/nginx/sites-available/beanstalk.letsrun.test
+echo "$NGINX" > /etc/nginx/sites-available/beanstalk.letsrun.local
 
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-ln -s /etc/nginx/sites-available/beanstalk.letsrun.test /etc/nginx/sites-enabled/beanstalk.letsrun.test
+ln -s /etc/nginx/sites-available/beanstalk.letsrun.local /etc/nginx/sites-enabled/beanstalk.letsrun.local
 
 
 service nginx restart

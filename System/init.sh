@@ -36,6 +36,7 @@ brew install grep
 brew install openssh
 brew install screen
 brew install php@7.4
+brew install pkg-config
 
 # Install font tools.
 brew tap bramstein/webfonttools
