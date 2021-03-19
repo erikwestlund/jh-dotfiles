@@ -96,6 +96,4 @@ export PATH=$PATH:/Users/erik/Library/Python/3.7/bin
 
 source $HOME/.aliases
 
-eval "$(docker-machine env Docker)"
-
 eval "$(fnm env --multi)"
