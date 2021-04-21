@@ -19,6 +19,11 @@ brew install pipenv
 brew install redis
 brew install composer
 brew install jq
+brew install jpegoptim
+brew install optipng
+brew install pngquant
+brew install svgo
+brew install gifsicle
 
 # install node & npm
 brew install Schniz/tap/fnm
