@@ -226,3 +226,5 @@ alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3:/
 # php
 alias link74="brew unlink php && brew link --overwrite --force php@7.4 && valet use php@7.4"
 alias link80="brew unlink php && brew link --overwrite --force php@8.0 && valet use php@8.0"
+
+fnm use 13
