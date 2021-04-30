@@ -185,11 +185,9 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
-[credential]
-	helper = "!security delete-internet-password -l \"git-codecommit.us-east-1.amazonaws.com\" 2> /dev/null; aws codecommit credential-helper $@"
-	UseHttpPath = true
+
 [user]
 	name = Erik Westlund
-	email = edbwestlund@gmail.com
+	email = erikwestlund@hey.com
 	editor = nano
 
