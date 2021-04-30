@@ -13,16 +13,17 @@ export PATH="/usr/local/bin:$PATH"
 brew tap homebrew/cask-drivers
 
 # install brew casks
-brew cask install 1password
-brew cask install google-chrome
-brew cask install superduper
-brew cask install spotify
-brew cask install sonos
-brew cask install microsoft-office
-brew cask install zotero
-brew cask install alfred
-brew cask install freedom
-brew cask install geekbench
-brew cask install caffeine
-brew cask install slack
-brew cask install istat-menus
+brew install 1password
+brew install google-chrome
+brew install spotify
+brew install sonos
+brew install microsoft-word
+brew install microsoft-excel
+brew install microsoft-powerpoint
+brew install zotero
+brew install alfred
+brew install freedom
+brew install geekbench
+brew install caffeine
+brew install slack
+brew install istat-menus

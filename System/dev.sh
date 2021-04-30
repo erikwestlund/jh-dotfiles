@@ -16,7 +16,6 @@ export PATH="/usr/local/bin:$PATH"
 brew install r
 brew install awscli
 brew install pipenv
-brew install redis
 brew install composer
 brew install jq
 brew install jpegoptim
@@ -26,9 +25,8 @@ brew install svgo
 brew install gifsicle
 
 # install node & npm
-brew install Schniz/tap/fnm
-fnm install 12
-fnm use 12
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm install v15
 
 # install brew casks
 brew cask install jetbrains-toolbox
