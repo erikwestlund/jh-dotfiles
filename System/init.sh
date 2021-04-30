@@ -91,10 +91,10 @@ touch ~/.ssh/config
 source $HOME/System/dev/ssh-permissions.sh
 
 # install iterm2
-brew cask install iterm2
+brew install iterm2
 
 # install sublime text
-brew cask install sublime-text
+brew install sublime-text
 
 # Remove outdated versions from the cellar.
 brew cleanup
