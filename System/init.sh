@@ -43,6 +43,7 @@ brew install pkg-config
 # PHP
 brew tap shivammathur/php
 brew install shivammathur/php/php@7.4
+brew install shivammathur/php/php@8.0
 
 # Install font tools.
 brew tap bramstein/webfonttools
