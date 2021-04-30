@@ -30,9 +30,10 @@ nvm install v15
 
 # install brew casks
 brew install jetbrains-toolbox
-brew install coda
+brew install nova
 brew install dash
 brew install github
 brew install rstudio
 brew install tableplus
+brew install dbngin
 brew install mactex
