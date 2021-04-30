@@ -150,17 +150,14 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
-
-alias addawssec="bash /Users/erik/code/utils/add_ip_lrc_aws.sh"
 alias eslintres="./node_modules/eslint/bin/eslint.js --fix resources --ext .js,.vue"
 alias eslintlrc="./node_modules/eslint/bin/eslint.js --fix resources/js/Pages --fix resources/js/Shared --ext .js,.vue"
 
-alias syncsidekick="rsync -az /Users/erik/code/letsrun-sidekick/public/js/ /Users/erik/code/letsrun-legacy/htdocs/inc/sidekick/js/ && rsync -az /Users/erik/code/letsrun-sidekick/public/css/ /Users/erik/code/letsrun-legacy/htdocs/inc/sidekick/css/"
-
 # database stuff
-alias lrdb="ssh letsrun-dbserver"
-alias lrm="ssh letsrun-master"
-alias lrdev="ssh letsrun-dev"
+alias lrdb="ssh db.letsrun.com"
+alias lrlb="ssh lb.letsrun.com"
+alias lrworker="ssh app-worker.letsrun.com"
+alias lrredis="ssh redis.letsrun.com"
 
 alias art="php artisan"
 alias tinker="php artisan tinker"
@@ -209,22 +206,10 @@ alias inrep="sudo ~/System/bin/InsanelyRepairPermission -rt /"
 alias d="./develop"
 alias dev="./develop"
 
-# blog docker stuff
-alias cblog="cd /Users/erik/code/blog"
-alias blogstop="cd /Users/erik/code/blog && docker stop blogcontainer"
-alias blogrm="cd /Users/erik/code/blog &&  docker rm blogcontainer"
-alias blogkill="cd /Users/erik/code/blog && docker stop blogcontainer && docker rm blogcontainer"
-alias blogimage="cd /Users/erik/code/blog && docker build -t blog ."
-alias blogstart="cd /Users/erik/code/blog && docker run -d --name blogcontainer -p 80:80 -v $(pwd)/app:/app -e FLASK_APP=run.py -e FLASK_DEBUG=1 blog flask run --host=0.0.0.0 --port=80"
-alias blogrebuild="cd /Users/erik/code/blog && docker stop blogcontainer && docker rm blogcontainer && docker build -t blog . && docker run -d --name blogcontainer -p 80:80 -v $(pwd)/app:/app -e FLASK_APP=run.py -e FLASK_DEBUG=1 blog flask run --host=0.0.0.0 --port=80"
-
 # do
 alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets /Users/erik/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=do-letsrun-private"
 alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=do-letsrun-private"
 
-
 # php
 alias link74="brew unlink php && brew link --overwrite --force php@7.4 && valet use php@7.4"
 alias link80="brew unlink php && brew link --overwrite --force php@8.0 && valet use php@8.0"
-
-fnm use 13
