@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 rclone copy /etc/hosts config:/erik-config/
+rclone copy ~/.config/rclone/rclone.conf config:/erik-config/rclone/
 rclone sync ~/.ssh/ config:/erik-config/ssh/
 rclone sync ~/.aws/ config:/erik-config/aws/
 

@@ -6,8 +6,8 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-
 rclone copy config:/erik-config/hosts /etc/
+rclone copy config:/erik-config/rclone/rclone.conf ~/.config/rclone/
 rclone sync config:/erik-config/ssh/ ~/.ssh/
 rclone sync config:/erik-config/aws/ ~/.aws/
 
