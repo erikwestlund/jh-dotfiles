@@ -14,6 +14,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # install brew packages
 brew install r
+brew install zulu15
 brew install awscli
 brew install pipenv
 brew install composer
@@ -28,12 +29,19 @@ brew install gifsicle
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 nvm install v15
 
+# valet
+composer global require laravel/valet
+
+# laravel utils
+brew install ray
+brew install tinkerwell
+
 # install brew casks
 brew install jetbrains-toolbox
 brew install nova
 brew install dash
 brew install github
-brew install rstudio
+# brew install rstudio: Get daily build for now https://dailies.rstudio.com/
 brew install tableplus
 brew install dbngin
 brew install mactex

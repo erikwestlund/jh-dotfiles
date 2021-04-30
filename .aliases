@@ -202,14 +202,15 @@ alias clet="cd ~/code/letsrun/"
 alias letsrun="cd ~/code/letsrun/"
 alias dotfiles="cd ~/code/dotfiles"
 alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
-alias inrep="sudo ~/System/bin/InsanelyRepairPermission -rt /"
-alias d="./develop"
-alias dev="./develop"
+
+# secrets
+alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
+alias put-secrets="bash $HOME/System/scripts/put-secrets.sh"
 
 # do
 alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets /Users/erik/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=do-letsrun-private"
 alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=do-letsrun-private"
 
 # php
-alias link74="brew unlink php && brew link --overwrite --force php@7.4 && valet use php@7.4"
+alias link74="brew unlink php && brew link --overwrite --force php@7.4 && valet use shivammathur/php/php@7.4"
 alias link80="brew unlink php && brew link --overwrite --force php@8.0 && valet use php@8.0"

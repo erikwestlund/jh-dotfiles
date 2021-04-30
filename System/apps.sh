@@ -14,6 +14,7 @@ brew tap homebrew/cask-drivers
 
 # install brew casks
 brew install 1password
+brew install transmit
 brew install google-chrome
 brew install spotify
 brew install sonos
@@ -27,3 +28,5 @@ brew install geekbench
 brew install caffeine
 brew install slack
 brew install istat-menus
+brew install zoom
+brew install evernote

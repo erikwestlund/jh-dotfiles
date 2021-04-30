@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 mkdir -p $HOME/.ssh
 chmod -f 700 $HOME/.ssh || :
 
@@ -21,7 +23,12 @@ if [ -f $FILE ]; then
    chmod -f 600 $FILE || exit 0
 fi
 
-FILE=$HOME/.ssh/github_rsa
+FILE=$HOME/.ssh/do_lrc_root_rsa
+if [ -f $FILE ]; then
+   chmod -f 600 $FILE || exit 0
+fi
+
+FILE=$HOME/.ssh/letsrun_deploy_rsa
 if [ -f $FILE ]; then
    chmod -f 600 $FILE || exit 0
 fi

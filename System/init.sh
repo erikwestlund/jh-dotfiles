@@ -8,6 +8,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Tap casks
+brew tap homebrew/cask-versions
+
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
@@ -39,7 +42,7 @@ brew install pkg-config
 
 # PHP
 brew tap shivammathur/php
-brew install php@7.4
+brew install shivammathur/php/php@7.4
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -77,6 +80,9 @@ ln -fs $HOME/System/init/vscode/settings.json ~/Library/Application\ Support/Cod
 ln -fs $HOME/System/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -fs $HOME/System/init/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 
+# rclone
+brew install rclone
+
 #htop
 brew install htop
 
@@ -102,3 +108,6 @@ brew cleanup
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# tell user
+echo "Now is a good time to set up rclone using rclone.conf, to bootstrap the secrets."

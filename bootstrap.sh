@@ -12,8 +12,8 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	
-	source $HOME/System/dev/ssh-permissions.sh
+
+	source $HOME/System/scripts/ssh-permissions.sh
 	find $HOME/System -type f -iname "*.sh" -exec chmod +x {} \;
 }
 
