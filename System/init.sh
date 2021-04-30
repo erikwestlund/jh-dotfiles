@@ -35,8 +35,11 @@ brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew install php@7.4
 brew install pkg-config
+
+# PHP
+brew tap shivammathur/php
+brew install php@7.4
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -46,9 +49,9 @@ brew install woff2
 
 # install brew fonts
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-brew cask install font-source-code-pro
-brew cask install font-lato
+brew install font-fira-code
+brew install font-source-code-pro
+brew install font-lato
 
 # Install other useful binaries.
 brew install ack
@@ -68,7 +71,7 @@ brew install vbindiff
 brew install zopfli
 
 # vscode
-brew cask install visual-studio-code
+brew install visual-studio-code
 mkdir -p ~/Library/Application\ Support/Code/User/
 ln -fs $HOME/System/init/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -fs $HOME/System/init/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
@@ -79,7 +82,6 @@ brew install htop
 
 # set permissions for set up scripts and binaries
 chmod +x $HOME/System/*.sh
-chmod +x $HOME/System/bin/InsanelyRepairPermission
 
 # ssh
 mkdir -p ~/.ssh
