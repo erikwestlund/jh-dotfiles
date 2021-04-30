@@ -29,10 +29,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 nvm install v15
 
 # install brew casks
-brew cask install jetbrains-toolbox
-brew cask install coda
-brew cask install dash
-brew cask install github
-brew cask install rstudio
-brew cask install tableplus
-brew cask install mactex
+brew install jetbrains-toolbox
+brew install coda
+brew install dash
+brew install github
+brew install rstudio
+brew install tableplus
+brew install mactex
