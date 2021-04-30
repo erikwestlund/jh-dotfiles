@@ -6,7 +6,7 @@
 mkdir -p $HOME/code/letsrun
 cd $HOME/code/letsrun
 git init
-git remote add origin https://git-codecommit.us-east-1.amazonaws.com/v1/repos/LetsRun.com
+git remote add origin https://github.com/letsrun/letsrun.com
 git fetch
 git reset --mixed
 git checkout dev
