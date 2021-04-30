@@ -208,8 +208,8 @@ alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
 alias put-secrets="bash $HOME/System/scripts/put-secrets.sh"
 
 # do
-alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets /Users/erik/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=do-letsrun-private"
-alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=do-letsrun-private"
+alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets /Users/erik/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
+alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
 
 # php
 alias link74="brew unlink php && brew link --overwrite --force php@7.4 && valet use shivammathur/php/php@7.4"
