@@ -212,5 +212,5 @@ alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets /Users/erik/code/l
 alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
 
 # php
-alias link74="brew unlink php && brew link --overwrite --force php@7.4 && valet use shivammathur/php/php@7.4"
-alias link80="brew unlink php && brew link --overwrite --force php@8.0 && valet use php@8.0"
+alias link74="valet use php@7.4 --force"
+alias link80="valet use php@8.0 --force"
