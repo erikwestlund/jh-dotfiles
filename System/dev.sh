@@ -33,6 +33,10 @@ nvm install v13
 composer global require laravel/valet
 valet install
 
+# redis-cli; we'll use dbnging for redis installs
+brew tap ringohub/redis-cli
+brew install redis-cli
+
 # laravel utils
 brew install ray
 brew install tinkerwell
