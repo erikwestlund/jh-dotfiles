@@ -30,3 +30,4 @@ brew install slack
 brew install istat-menus
 brew install zoom
 brew install evernote
+brew install discord
