@@ -198,11 +198,11 @@ alias phpunit="vendor/bin/phpunit"
 alias phpuf="phpunit --filter "
 alias duskf="php artisan dusk --filter"
 alias code="cd ~/code"
-alias clet="cd ~/code/letsrun/"
+alias clet="cd ~/code/letsrun/ && nvm use 13"
 alias letsrun="cd ~/code/letsrun/"
 alias dotfiles="cd ~/code/dotfiles"
 alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
-alias cpeq="cd ~/code/pequod"
+alias cpeq="cd ~/code/pequod && nvm use 15"
 
 # secrets
 alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
