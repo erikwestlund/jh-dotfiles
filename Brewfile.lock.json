@@ -2198,6 +2198,12 @@
         "options": {
           "full_name": "viscosity"
         }
+      },
+      "parallels": {
+        "version": "17.1.0-51516",
+        "options": {
+          "full_name": "parallels"
+        }
       }
     },
     "mas": {
@@ -2222,7 +2228,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "82ba65de240843da4dd276cb75b3f9c05ca99d0d",
+        "Homebrew/homebrew-core": "8343334e53c24572b471b52fbde598c135a717cf",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
         "macOS": "12.0.1"
