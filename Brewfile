@@ -68,15 +68,19 @@ cask "tinkerwell"
 brew "r"
 cask "zulu15"
 
-
 # Apps
-mas "Magnet", id: 441258766
 mas "Blackmagic Disk Speed Test", id: 425264550
+mas "Magnet", id: 441258766
+mas "Mimir", id: 1508343025
+mas "Pixelmator Pro", id: 1289583905
+mas "xScope 4", id: 889428659
 
 cask "1password"
 cask "alfred"
+cask "backblaze"
 cask "bartender"
 cask "caffeine"
+cask "coda"
 cask "dash"
 cask "dbngin"
 cask "discord"
@@ -86,15 +90,19 @@ cask "garmin-express"
 cask "geekbench"
 cask "github"
 cask "google-chrome"
+cask "iina"
 cask "istat-menus"
 cask "jetbrains-toolbox"
 cask "mactex"
 cask "microsoft-excel"
 cask "microsoft-powerpoint"
+cask "microsoft-remote-desktop"
 cask "microsoft-word"
 cask "logitech-options"
+cask "openaudible"
 cask "nova"
 cask "rstudio"
+cask "screenflow"
 cask "slack"
 cask "sonos"
 cask "spotify"
@@ -103,5 +111,6 @@ cask "sublime-text"
 cask "tableplus"
 cask "transmit"
 cask "visual-studio-code"
+cask "viscosity"
 cask "zoom"
 cask "zotero"
