@@ -77,7 +77,6 @@ mas "xScope 4", id: 889428659
 
 cask "1password"
 cask "alfred"
-cask "backblaze"
 cask "bartender"
 cask "caffeine"
 cask "coda"
