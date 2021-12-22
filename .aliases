@@ -209,12 +209,15 @@ alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
 alias put-secrets="bash $HOME/System/scripts/put-secrets.sh"
 
 # do
-alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets /Users/erik/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
-alias lrcputsecrets="aws s3 sync /Users/erik/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
+alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets $HOME/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
+alias lrcputsecrets="aws s3 sync $HOME/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
 
 # php
 alias link74="valet use php@7.4 --force"
 alias link80="valet use php@8.0 --force"
 
 # fonts
-alias fontawesome="/Users/erik/code/fontawesome/demo-macos"
+alias fontawesome="$HOME/code/fontawesome/demo-macos"
+
+#page speed
+alias pageresponse="bash $HOME/System/scripts/page-response.sh"
