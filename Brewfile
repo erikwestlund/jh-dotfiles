@@ -78,6 +78,7 @@ mas "Magnet", id: 441258766
 mas "Mimir", id: 1508343025
 mas "Pixelmator Pro", id: 1289583905
 mas "xScope 4", id: 889428659
+mas "Kindle", id: 405399194
 
 cask "1password"
 cask "alfred"
