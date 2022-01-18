@@ -50,6 +50,7 @@ brew "unixodbc"
 brew "vbindiff"
 brew "vim"
 brew "wget"
+brew "youtube-dl"
 brew "zopfli"
 brew "zsh"
 
