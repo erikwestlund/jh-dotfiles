@@ -83,6 +83,7 @@ mas "Kindle", id: 405399194
 
 cask "1password"
 cask "alfred"
+cask "android-file-transfer"
 cask "bartender"
 cask "caffeine"
 cask "calibre"
