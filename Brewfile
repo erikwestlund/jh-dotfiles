@@ -62,6 +62,7 @@ brew "sfnt2woff-zopfli"
 brew "woff2"
 cask "font-fira-code"
 cask "font-lato"
+cask "font-ibm-plex"
 cask "font-source-code-pro"
 
 # PHP
