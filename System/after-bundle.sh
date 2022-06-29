@@ -33,6 +33,10 @@ nvm install v15
 composer global require laravel/valet
 valet install
 
+# Statamic
+composer global require statamic/cli
+
+
 
 # set up R Java
 R CMD javareconf
