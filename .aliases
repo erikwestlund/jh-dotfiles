@@ -204,7 +204,7 @@ alias dotfiles="cd ~/code/dotfiles"
 alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
 alias cpeq="cd ~/code/pequod && nvm use 15"
 alias cword="cd ~/code/wordlegroup/ && nvm use 13"
-alias cac="cd ~/code/academic.page/ && nvm use 15"
+alias cac="cd ~/code/academic.page/ && nvm use 16"
 
 # secrets
 alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
