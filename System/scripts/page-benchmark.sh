@@ -18,9 +18,9 @@ normal=$(tput sgr0)
 withoutCache() {
     local url="$1"
     if [[ $url == *"?"* ]]; then
-        echo "${url}&no_cache=1"
+        echo "${url}&no_cache=$RANDOM"
     else
-        echo "${url}?no_cache=1"
+        echo "${url}?no_cache=$RANDOM"
     fi
 }
 
