@@ -44,3 +44,10 @@ R CMD javareconf
 
 # tell user
 echo "Now is a good time to set up rclone using rclone.conf, to bootstrap the secrets."
+
+# configure php
+sed -i'' -e 's/memory_limit = 128M/memory_limit = 256M/g' /opt/homebrew/etc/php/8.1/php.ini
+sed -i'' -e 's/post_max_size = 8M/post_max_size = 1024M/g' /opt/homebrew/etc/php/8.1/php.ini
+sed -i'' -e 's/upload_max_filesize = 2M/upload_max_filesize = 102M4/g' /opt/homebrew/etc/php/8.1/php.ini
+
+
