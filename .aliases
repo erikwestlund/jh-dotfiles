@@ -224,3 +224,6 @@ alias fontawesome="$HOME/code/fontawesome/demo-macos"
 
 #page speed
 alias pageresponse="bash $HOME/System/scripts/page-response.sh"
+
+# alias lsa
+alias lsa="cd $HOME/Documents/LetsRun/shoes-analysis"
