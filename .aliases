@@ -228,6 +228,12 @@ alias pageresponse="bash $HOME/System/scripts/page-response.sh"
 # alias lsa
 alias lsa="cd $HOME/Documents/LetsRun/shoes-analysis"
 
+#Python
+alias pipsh="pipenv shell"
+
 # Django
 alias rundj="python manage.py runserver"
 alias mpy="python manage.py"
+
+# Full
+alias full="cd ~/code/full && pipenv shell"
