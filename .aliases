@@ -218,6 +218,7 @@ alias lrcputsecrets="aws s3 sync $HOME/code/letsrun-servers/secrets/  s3://letsr
 alias link74="valet use php@7.4 --force"
 alias link80="valet use php@8.0 --force"
 alias link81="valet use php@8.1 --force"
+alias link82="valet use php@8.2 --force"
 
 # fonts
 alias fontawesome="$HOME/code/fontawesome/demo-macos"

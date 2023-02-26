@@ -11,6 +11,7 @@ brew "mas"
 # Utilities
 brew "ack"
 brew "awscli"
+brew "bfg"
 brew "coreutils"
 brew "cmake"
 brew "doctl"
