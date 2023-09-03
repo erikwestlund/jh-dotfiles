@@ -211,8 +211,8 @@ alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
 alias put-secrets="bash $HOME/System/scripts/put-secrets.sh"
 
 # web dev secrets
-alias sync-dev-ecrets="aws s3 sync s3://stack/secrets $HOME/code/servers/secrets/ --endpoint=https://us-east-1.linodeobjects.com --profile=dev"
-alias put-dev-secrets="aws s3 sync $HOME/code/servers/secrets/  s3://stack/secrets --endpoint=https://us-east-1.linodeobjects.com --profile=dev"
+alias sync-dev-ecrets="aws s3 sync s3://stack/secrets $HOME/code/servers/secrets/ --endpoint=https://4d70d0f810424217b99890dba7bebc5f.r2.cloudflarestorage.com --profile=dev"
+alias put-dev-secrets="aws s3 sync $HOME/code/servers/secrets/ s3://secrets --endpoint=https://4d70d0f810424217b99890dba7bebc5f.r2.cloudflarestorage.com --profile=dev"
 
 # do
 alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets $HOME/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
