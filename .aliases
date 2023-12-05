@@ -9,10 +9,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias c="cd ~/code"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -53,7 +52,6 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -133,10 +131,6 @@ done
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume output volume 100'"
-
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
@@ -149,18 +143,6 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
-
-alias eslintres="./node_modules/eslint/bin/eslint.js --fix resources --ext .js,.vue"
-alias eslintlrc="./node_modules/eslint/bin/eslint.js --fix resources/js/Pages --fix resources/js/Shared --ext .js,.vue"
-
-# database stuff
-alias lrdb="ssh db.letsrun.com"
-alias lrlb="ssh lb.letsrun.com"
-alias lrworker="ssh app-worker.letsrun.com"
-alias lrredis="ssh redis.letsrun.com"
-
-alias art="php artisan"
-alias tinker="php artisan tinker"
 
 # git
 alias a="git add"
@@ -190,56 +172,9 @@ alias co="git checkout"
 alias cob="git checkout -b"
 
 # coding helpers
-alias flredis="redis-cli flushall"
-alias log50="tail -n 50 storage/logs/laravel.log"
-alias aqw="php artisan queue:work"
-alias aql="php artisan queue:listen --tries=3 --timeout=180"
-alias phpunit="vendor/bin/phpunit"
-alias phpuf="phpunit --filter "
-alias duskf="php artisan dusk --filter"
 alias code="cd ~/code"
-alias clet="cd ~/code/letsrun/ && nvm use 13"
-alias letsrun="cd ~/code/letsrun/"
 alias dotfiles="cd ~/code/dotfiles"
 alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
-alias cpeq="cd ~/code/pequod && nvm use 15"
-alias cword="cd ~/code/wordlegroup/ && nvm use 13"
-alias cac="cd ~/code/academic.page/ && nvm use 16"
-
-# secrets
-alias sync-secrets="bash $HOME/System/scripts/sync-secrets.sh"
-alias put-secrets="bash $HOME/System/scripts/put-secrets.sh"
-
-# web dev secrets
-alias sync-dev-ecrets="aws s3 sync s3://stack/secrets $HOME/code/servers/secrets/ --endpoint=https://4d70d0f810424217b99890dba7bebc5f.r2.cloudflarestorage.com --profile=dev"
-alias put-dev-secrets="aws s3 sync $HOME/code/servers/secrets/ s3://secrets --endpoint=https://4d70d0f810424217b99890dba7bebc5f.r2.cloudflarestorage.com --profile=dev"
-
-# do
-alias lrcgetsecrets="aws s3 sync s3://letsrun-private/secrets $HOME/code/letsrun-servers/secrets/ --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
-alias lrcputsecrets="aws s3 sync $HOME/code/letsrun-servers/secrets/  s3://letsrun-private/secrets --endpoint=https://nyc3.digitaloceanspaces.com --profile=letsrun-do"
-
-# php
-alias link74="valet use php@7.4 --force"
-alias link80="valet use php@8.0 --force"
-alias link81="valet use php@8.1 --force"
-alias link82="valet use php@8.2 --force"
-
-# fonts
-alias fontawesome="$HOME/code/fontawesome/demo-macos"
-
-#page speed
-alias pageresponse="bash $HOME/System/scripts/page-response.sh"
-
-# alias lsa
-alias lsa="cd $HOME/Documents/LetsRun/shoes-analysis"
 
 #Python
 alias pipsh="pipenv shell"
-
-# Django
-alias rundj="python manage.py runserver"
-alias mpy="python manage.py"
-alias dja="django-admin"
-
-# Full
-alias full="cd ~/code/full && pipenv shell"
