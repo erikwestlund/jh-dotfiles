@@ -175,6 +175,7 @@ alias cob="git checkout -b"
 alias code="cd ~/code"
 alias dotfiles="cd ~/code/dotfiles"
 alias bootdot="bash ~/code/dotfiles/bootstrap.sh"
+alias update_r="bash ~/code/dotfiles/System/dev/r-packages.sh"
 
 #Python
 alias pipsh="pipenv shell"

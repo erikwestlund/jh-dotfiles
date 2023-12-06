@@ -1,1 +1,7 @@
+Rscript -e 'install.packages("devtools", repos="https://cloud.r-project.org")'
 Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("lme4", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("dagitty", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("mvtnorm", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("rstan", repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages("cmdstanr", repos="https://cloud.r-project.org")'
