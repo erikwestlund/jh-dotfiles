@@ -181,4 +181,4 @@ alias update_r="bash ~/code/dotfiles/System/dev/r-packages.sh"
 alias pipsh="pipenv shell"
 
 # Rstudio
-alias save_rstudio_to_dotfiles="cp ~/.config/rstudio/keybindings/editor_bindings.json ~/code/dotfiles/System/dev/rstudio/keybindings/editor_bindings.json"
+alias save_rstudio_keybindings="cp ~/.config/rstudio/keybindings/editor_bindings.json ~/code/dotfiles/System/dev/rstudio/keybindings/editor_bindings.json"
