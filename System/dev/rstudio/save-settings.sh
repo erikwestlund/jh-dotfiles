@@ -1,0 +1,1 @@
+cp ~/.config/rstudio/keybindings/editor_bindings.json ~/code/dotfiles/System/dev/rstudio/keybindings/editor_bindings.json
