@@ -1,0 +1,11 @@
+{
+    "expandToMatching": "Cmd+D||Ctrl+Shift+E",
+    "removeline": "Cmd+K",
+    "selectup": "",
+    "modifyNumberUp": "",
+    "modifyNumberDown": "",
+    "selectdown": "",
+    "movelinesup": "Alt+Shift+Up",
+    "movelinesdown": "Alt+Shift+Down",
+    "gotostart": "Cmd+Up|Cmd+Up"
+}
