@@ -179,6 +179,7 @@ alias update_r="bash ~/code/dotfiles/System/dev/r-packages.sh"
 
 #Python
 alias pipsh="pipenv shell"
+alias pvenv=". venv/bin/activate"
 
 # Rstudio
 alias save_rstudio_settings=" bash ~/code/dotfiles/System/dev/rstudio/save-settings.sh"
