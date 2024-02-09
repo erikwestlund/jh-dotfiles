@@ -7,6 +7,7 @@ tap "ringohub/redis-cli"
 tap "isen-ng/dotnet-sdk-versions"
 
 # Utilities
+brew "1password-cli"
 brew "ack"
 brew "awscli"
 brew "bfg"
