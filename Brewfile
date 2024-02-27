@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "bramstein/webfonttools"
 tap "buo/cask-upgrade"
+tap "r-lib/rig"
 tap "ringohub/redis-cli"
 tap "isen-ng/dotnet-sdk-versions"
 
@@ -59,7 +60,7 @@ cask "font-fira-code"
 cask "font-source-code-pro"
 
 # R
-brew "r"
+brew "rswitch"
 cask "zulu15"
 
 # Apps/Casks
@@ -85,6 +86,7 @@ cask "logitech-options"
 cask "mactex"
 cask "nova"
 cask "openaudible"
+cask "rig"
 cask "rstudio"
 cask "slack"
 cask "sonos"
