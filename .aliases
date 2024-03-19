@@ -159,6 +159,7 @@ alias ac="git add . && git commit -am"
 alias pushdev="git push origin dev"
 alias pushstaging="git push origin staging"
 alias pushmaster="git push origin master"
+alias pushmain="git push origin main"
 alias pushall="git push --all origin"
 
 alias d="git diff"
