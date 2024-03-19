@@ -182,12 +182,14 @@ alias csd="cd ~/code/jh-sidr"
 alias csidr="cd ~/code/jh-sidr"
 alias sidrenv="cd ~/code/jh-sidr && . venv/bin/activate"
 
-#Python
+# Python
 alias pipsh="pipenv shell"
 alias pvenv=". venv/bin/activate"
 alias soarenv="cd ~/code/soar && . venv/bin/activate"
 alias soar="python3 ~/code/soar/soar.py"
 
+# NeoVim
+alias nv="nvim"
 
 # Rstudio
 alias save_rstudio_settings=" bash ~/code/dotfiles/System/dev/rstudio/save-settings.sh"
