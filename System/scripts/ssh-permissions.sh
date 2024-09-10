@@ -18,22 +18,3 @@ if [ -f $FILE ]; then
    chmod -f 644 $FILE || exit 0
 fi
 
-FILE=$HOME/.ssh/id_rsa
-if [ -f $FILE ]; then
-   chmod -f 600 $FILE || exit 0
-fi
-
-FILE=$HOME/.ssh/do_lrc_root_rsa
-if [ -f $FILE ]; then
-   chmod -f 600 $FILE || exit 0
-fi
-
-FILE=$HOME/.ssh/letsrun_deploy_rsa
-if [ -f $FILE ]; then
-   chmod -f 600 $FILE || exit 0
-fi
-
-FILE=$HOME/.ssh/letsrun.pem
-if [ -f $FILE ]; then
-   chmod -f 600 $FILE || exit 0
-fi
