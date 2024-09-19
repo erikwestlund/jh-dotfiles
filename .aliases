@@ -172,6 +172,9 @@ alias b="git branch"
 alias co="git checkout"
 alias cob="git checkout -b"
 
+# Docker
+alias dc="docker-compose"
+
 # coding helpers
 alias code="cd ~/code"
 alias dotfiles="cd ~/code/dotfiles"
@@ -183,7 +186,8 @@ alias csd="cd ~/code/jh-sidr"
 alias csidr="cd ~/code/jh-sidr"
 alias sidrenv="cd ~/code/jh-sidr && . venv/bin/activate"
 alias cna="cd ~/code/na-accord-data-submission"
-alias naenv="cd ~/code/na-accord-data-submission && . venv/bin/activate"
+alias naenv=". ~/code/venvs/naaccord/bin/activate"
+alias narun=". ~/code/venvs/naaccord/bin/activate && python manage.py runserver"
 alias dnaup="cd ~/code/na-accord-data-submission && docker-compose -f docker-compose.dev.yml up -d"
 alias dnadown="cd ~/code/na-accord-data-submission && docker-compose -f docker-compose.dev.yml down"
 
