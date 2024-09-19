@@ -182,6 +182,8 @@ alias update_r="bash ~/code/dotfiles/System/dev/r-packages.sh"
 alias csd="cd ~/code/jh-sidr"
 alias csidr="cd ~/code/jh-sidr"
 alias sidrenv="cd ~/code/jh-sidr && . venv/bin/activate"
+alias sidrenv="cna ~/code/na-accord-data-submission"
+alias ="naenv ~/code/na-accord-data-submission && . venv/bin/activate"
 
 # Python
 alias pipsh="pipenv shell"
