@@ -188,8 +188,8 @@ alias sidrenv="cd ~/code/jh-sidr && . venv/bin/activate"
 alias cna="cd ~/code/naaccord"
 alias naenv=". ~/code/venvs/naaccord/bin/activate"
 alias narun="cd ~/code/naaccord && . venv/bin/activate && python manage.py runserver"
-alias dnaup="cd ~/code/na-accord-data-submission && docker-compose -f docker-compose.dev.yml up -d"
-alias dnadown="cd ~/code/na-accord-data-submission && docker-compose -f docker-compose.dev.yml down"
+alias dnaup="cd ~/code/naaccord && docker-compose -f docker-compose.dev.yml up -d"
+alias dnadown="cd ~/code/naaccord && docker-compose -f docker-compose.dev.yml down"
 
 # Python
 alias pipsh="pipenv shell"
