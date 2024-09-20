@@ -196,6 +196,7 @@ alias pipsh="pipenv shell"
 alias pvenv=". venv/bin/activate"
 alias soarenv="cd ~/code/soar && . venv/bin/activate"
 alias soar="python3 ~/code/soar/soar.py"
+alias pm="python manage.py"
 
 # NeoVim
 alias nv="nvim"
