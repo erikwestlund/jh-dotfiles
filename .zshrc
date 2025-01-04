@@ -95,3 +95,4 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.aliases
+export PATH="$HOME/Library/Application Support/Herd/bin:$PATH"
