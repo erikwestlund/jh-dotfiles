@@ -204,3 +204,9 @@ alias nv="nvim"
 # Rstudio
 alias save_rstudio_settings=" bash ~/code/dotfiles/System/dev/rstudio/save-settings.sh"
 alias install_rstudio_settings=" bash ~/code/dotfiles/System/dev/rstudio/install-settings.sh"
+
+# PHP
+alias art="php artisan"
+alias tinker="php artisan tinker"
+alias cpeq="cd ~/code/pequod/ && nvm use 22"
+

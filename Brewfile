@@ -22,6 +22,7 @@ brew "git-lfs"
 brew "git"
 brew "gnu-sed"
 brew "gnupg"
+brew "graphviz"
 brew "grep"
 brew "hatch"
 brew "htop"
@@ -63,13 +64,14 @@ cask "font-source-code-pro"
 
 # R
 brew "rswitch"
-cask "zulu15"
+cask "zulu21"
 
 # Apps/Casks
 cask "1password"
 cask "alfred"
 cask "anaconda"
 cask "bartender"
+cask "chatgpt"
 cask "citrix-workspace"
 cask "dash"
 cask "dbngin"
