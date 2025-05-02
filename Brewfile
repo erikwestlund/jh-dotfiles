@@ -63,7 +63,6 @@ cask "font-fira-code"
 cask "font-source-code-pro"
 
 # R
-brew "rswitch"
 cask "zulu21"
 
 # Apps/Casks
