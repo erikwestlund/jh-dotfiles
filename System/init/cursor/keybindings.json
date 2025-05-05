@@ -1,0 +1,77 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "shift+cmd+s shift+cmd+r",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "cmd+r cmd+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "-rerunSearchEditorSearch",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "quarto.runAllCells",
+        "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+    },
+    {
+        "key": "alt+cmd+r",
+        "command": "-quarto.runAllCells",
+        "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "quarto.runAllCells",
+        "when": "activeCustomEditorId == 'quarto.visualEditor'"
+    },
+    {
+        "key": "alt+cmd+r",
+        "command": "-quarto.runAllCells",
+        "when": "activeCustomEditorId == 'quarto.visualEditor'"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    }
+]
