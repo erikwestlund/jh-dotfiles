@@ -1,7 +1,10 @@
 {
     "window.commandCenter": true,
-    "workbench.colorTheme": "Night Owl Theme",
     "files.associations": {
         "*.rmd": "markdown"
+    },
+    "workbench.colorTheme": "Night Owl Theme",
+    "[r]": {
+        "editor.defaultFormatter": "REditorSupport.r"
     }
 }
