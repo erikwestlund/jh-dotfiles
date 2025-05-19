@@ -212,6 +212,15 @@ alias nv="nvim"
 alias save_rstudio_settings=" bash ~/code/dotfiles/System/dev/rstudio/save-settings.sh"
 alias install_rstudio_settings=" bash ~/code/dotfiles/System/dev/rstudio/install-settings.sh"
 
+# VS Code/Cursor
+alias vscode='cd ~/code/vscode'
+alias vspush='cd ~/code/vscode && ./push-from-code.sh'
+alias curpush='cd ~/code/vscode && ./push-from-cursor.sh'
+alias vspull='cd ~/code/vscode && ./sync-from-code.sh'
+alias curpull='cd ~/code/vscode && ./sync-from-cursor.sh'
+alias vstocur='cd ~/code/vscode && ./code-to-cursor.sh'
+alias curtovs='cd ~/code/vscode && ./cursor-to-code.sh'
+
 # PHP
 alias art="php artisan"
 alias tinker="php artisan tinker"
