@@ -26,3 +26,6 @@ git clone https://github.com/jsit/night-owl-iterm2-theme
 
 # set up R Java
 R CMD javareconf
+
+# Tmux plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
