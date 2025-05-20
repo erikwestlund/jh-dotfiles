@@ -228,32 +228,15 @@ alias tinker="php artisan tinker"
 alias cpeq="cd ~/code/pequod/ && nvm use 22"
 
 # Tmux
-# --- tmux helpers ---
-
-# Start dev tmux session for naaccord
-alias tmna="cd ~/code/naaccord && ./start_dev.sh"
-
-# Attach to existing 'dev' session
-alias tma="tmux attach -t dev"
-
-# Kill the 'dev' session
-alias tmk="tmux kill-session -t dev"
-
-# Kill all tmux sessions
+alias tmnew="tmux new -s"
+alias tma="tmux attach -t"
+alias tmd="tmux detach"
+alias tmk="tmux kill-session -t"
 alias tmkk="tmux kill-server"
-
-# List all sessions
 alias tmls="tmux ls"
 
-# Start a new named session (tmnew mysession)
-alias tmnew="tmux new -s"
-
-# Detach current session
-alias tmd="tmux detach"
-
-# Save current session (with tmux-resurrect)
-alias tmsave="tmux send-keys -t dev C-b C-s"
-
-# Restore last session (with tmux-resurrect)
-alias tmres="tmux send-keys -t dev C-b C-r"
+## NA Accord
+alias tmna="cd ~/code/naaccord && ./start_dev.sh"
+alias tmnasave="tmux send-keys -t naaccord C-b C-s"
+alias tmnares="tmux send-keys -t naaccord C-b C-r"
 
