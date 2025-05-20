@@ -195,6 +195,7 @@ alias naenv="cd ~/code/naaccord && . venv/bin/activate"
 alias narun="cd ~/code/naaccord && . venv/bin/activate && python manage.py runserver"
 alias nacelery="cd ~/code/naaccord && . venv/bin/activate && celery -A depot worker -l info"
 alias nabeat="cd ~/code/naaccord && . venv/bin/activate && celery -A config beat -l info"
+alias nadev="cd ~/code/naaccord && npm run dev"
 alias dnaup="cd ~/code/naaccord && docker compose -f docker-compose.dev.yml up -d"
 alias dnadown="cd ~/code/naaccord && docker compose -f docker-compose.dev.yml down"
 
