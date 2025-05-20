@@ -237,6 +237,8 @@ alias tmls="tmux ls"
 
 ## NA Accord
 alias tmna="cd ~/code/naaccord && ./start_dev.sh"
+alias tmana="tmux attach -t naaccord"
+alias tmdna="tmux attach -t naaccord"
 alias tmnasave="tmux send-keys -t naaccord C-b C-s"
 alias tmnares="tmux send-keys -t naaccord C-b C-r"
 
