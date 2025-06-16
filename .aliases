@@ -245,5 +245,9 @@ alias tmnares="tmux send-keys -t naaccord C-b C-r"
 alias tmnarc="tmux send-keys -t na:celery.0 C-c && sleep 1 && tmux send-keys -t na:celery.0 'source venv/bin/activate && celery -A depot worker -l info' C-m"
 alias tmnard="tmux send-keys -t na:django.0 C-c && sleep 1 && tmux send-keys -t na:django.0 'source venv/bin/activate && python manage.py runserver' C-m"
 
+# Park UKB
+alias tmpark="cd ~/code/parkukb && ./start_dev.sh"
+
 ## Courses
 alias tmdvc="cd ~/code/data-viz-summer-25 && ./start_dev.sh"
+
